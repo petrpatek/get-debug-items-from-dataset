@@ -17,7 +17,7 @@ Apify.main(async () => {
     await dataset.forEach(async (item) => {
         if (item['#debug']) {
             const debug = item['#debug'];
-            if (debug.errorMessages.length >= 1) {
+            if (debug.errorMessages && debug.errorMessages.length >= 1) {
                 debug.errorMessages.forEach(message => messageSet.add(message));
             }
             await Apify.pushData(item['#debug']);
