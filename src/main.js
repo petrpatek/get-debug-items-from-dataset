@@ -17,7 +17,9 @@ Apify.main(async () => {
     await dataset.forEach(async (item) => {
         if (item['#debug']) {
             const debug = item['#debug'];
-            debug.errorMessages.forEach(message => messageSet.add(message));
+            if (debug.errorMessages.length >= 1) {
+                debug.errorMessages.forEach(message => messageSet.add(message));
+            }
             await Apify.pushData(item['#debug']);
         }
     }, { fields: ['#debug'] });
