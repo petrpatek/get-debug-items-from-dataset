@@ -28,7 +28,7 @@ Apify.main(async () => {
 
     await persistSet(setName, messageSet);
 
-    if (messageSet.length < 30) {
+    if (messageSet.size < 30) {
         console.log(messageSet);
     }
 });
