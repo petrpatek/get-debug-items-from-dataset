@@ -1,3 +1,5 @@
-# Apify project template
+# Dataset debug info simplifier
 
-Before you start writing your first actor, please read [Apify Marketplace developers WIKI](https://gitlab.com/apify-public/wiki/wikis/home).
+Filters #debug fields from dataset and saves them to the new one. 
+If the debug info includes errorMessages array it saves unique errorMessages
+ to the KeyValues store under `UNIQUE` key.

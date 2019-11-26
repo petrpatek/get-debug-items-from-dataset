@@ -25,4 +25,10 @@ Apify.main(async () => {
     }, { fields: ['#debug'] });
 
     console.log(messageSet.size, ' Unique Errors');
+
+    await persistSet(setName, messageSet);
+
+    if (messageSet.length < 30) {
+        console.log(messageSet);
+    }
 });
