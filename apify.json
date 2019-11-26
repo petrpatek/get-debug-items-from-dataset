@@ -1,0 +1,7 @@
+{
+	"name": "get-debug-items-from-dataset",
+	"version": "0.0",
+	"buildTag": "latest",
+	"env": null,
+	"template": "apify_project"
+}

@@ -1,0 +1,17 @@
+{
+    "title": "Configure the source dataset",
+    "description": "",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "datasetId": {
+            "type": "string",
+            "title": "Dateset Id",
+            "description": "Id or name of dataset",
+            "editor": "textfield"
+        }
+    },
+    "required": [
+        "datasetId"
+    ]
+}
